@@ -1,0 +1,118 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+ 
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+    		<a class="back-to-previous" href="#">Exit<span class="visuallyhidden"> to the start page</span></a>
+
+		
+		
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	Change address
+	</h1>
+
+
+	<p>To apply this change of address to vehicles, enter the Vehicle Registration (the number plate) and the V5C doc ref number, found on the front of your V5C (the logbook).</p>
+
+
+	
+   
+    
+
+
+
+
+	<fieldset>
+
+		<div class="form-group">
+			<label class="form-label" for="address-postcode"><h2 class="heading-medium">Vehicle registration number</h2></label>
+			<input type="text" class="form-control form-control-1-4" id="address-postcode">
+			<p class="form-hint">Example: CU57 ABC</p>
+
+
+		</div>
+
+		<div class="form-group">
+			<label class="form-label" for="address-postcode"><h2 class="heading-medium">V5C document reference number</h2></label>
+			<input type="text" class="form-control form-control-1-2" id="address-postcode">
+			<p class="form-hint">11 digits, example: 0266 516 0600</p>
+
+
+		</div>
+
+
+		<div class="form-group">
+		<a href="change-address-2" class="button">Find address</a>
+		</div>
+
+
+	</fieldset>
+
+
+
+
+	
+	
+	
+
+	
+
+
+
+</article>		
+
+<!-- hide this next action button 
+<form action="get" class="form" style="margin-top:2.5em">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+-->
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}
