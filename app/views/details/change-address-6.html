@@ -1,0 +1,135 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+    <a class="back-to-previous" href="change-address-3">Back <span class="visuallyhidden"> to the previous question</span></a>
+
+		
+	<article>
+	
+	
+	<h2 class="heading-large">
+	Address changed
+	</h2>
+
+
+
+
+	<p>Your address has been changed to:
+
+	<h2 class="heading-19">New address</h2>
+
+    <p>
+
+    Ty Newydd Farm,<br />
+    Pontyberem<br />
+    LLANELLI<br />
+    SA15 5LP</p>
+
+	
+
+
+	<!-- end #your-details -->
+
+
+
+
+	<div class="grid grid-2-3">
+
+	
+	<p>Do you want to change the registered keeper address on any vehicles at the same time?</p>
+
+	<form method="get" action="also-change-keeper">
+	<fieldset style="margin-bottom:1em">
+		  <p></p>
+          <label for="radio-inline-1" class="block-label" style="float:left;clear:none;margin-right:10px">
+            <input id="radio-inline-1" type="radio"  name="keepertoo" value="yes">
+            Yes
+          </label>
+
+          
+          <label for="radio-inline-2" class="block-label" style="float:left;clear:none">
+            <input id="radio-inline-2" type="radio"  name="keepertoo" value="no">
+            No
+          </label>
+	</fieldset>
+
+
+
+
+	</div>
+
+
+		
+
+
+		<div class="form-group" style="padding-top:2em">
+			<input type="submit" name="submit" value="Continue" class="button">
+		</div>
+     </form>
+
+
+
+
+	
+	</div>
+	
+
+	
+
+
+
+</article>		
+
+<!-- hide this next action button 
+<form action="get" class="form" style="margin-top:2.5em">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+-->
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

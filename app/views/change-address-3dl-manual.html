@@ -1,0 +1,197 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+ 
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+	<a class="back-to-previous" href="driving-licence-change-address-1">Back <span class="visuallyhidden"> to view driving licence</span></a>
+
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	Change address
+	</h1>
+
+
+
+<div>
+	<fieldset class="inline">
+    <label class="block-label" for="radio-inline-1">
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+      Yes
+    </label>
+    <label class="block-label" for="radio-inline-2">
+      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+      No
+    </label>
+  </fieldset>
+  </div>
+
+  <br clear="all">
+
+<div>
+  <label class="block-label" for="radio-1">
+    <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+    Northern Ireland
+  </label>
+  <label class="block-label" for="radio-2">
+    <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+    Isle of Man or the Channel Islands
+  </label>
+  <p class="form-block">or</p>
+  <label class="block-label" for="radio-3">
+    <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+    I am a British citizen living abroad
+  </label>
+</div>
+
+  <br clear="all">
+
+
+
+
+
+
+
+
+	<div id="your-details">
+
+
+    
+   
+    
+    <h2 class="heading-19">Old address</h2>
+
+    <p>
+    38 North Street,<br />
+    Fritwell<br />
+    BICESTER<br />
+    OX27 7QR</p>
+
+	</div>
+
+
+	<!-- end #your-details -->
+
+
+
+
+	<fieldset>
+		
+
+		<fieldset class="validate" data-validation-name="addressManual" data-validation-type="fieldset" data-validation-rules="atLeastOneTextEntry atLeastOneValid" data-validation-children="manualAddressMultiline city">
+        
+        <div class="validation-wrapper ">
+            <fieldset class="multi-line-field validate form-group" data-validation-name="manualAddressMultiline" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="manualAddressLineOne manualAddressLineTwo manualAddressLineThree">
+                <legend class="label">
+                    <h2 class="heading-19">New address</h2>
+                </legend>
+
+                <label for="address_manualAddress_lineOne" class="visuallyhidden">Address line one</label>
+
+                <p><input type="text" id="address_manualAddress_lineOne" name="address.manualAddress.lineOne" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineOne" data-validation-type="field" data-validation-rules="nonEmpty"></p>
+
+
+
+                <label for="address_manualAddress_lineTwo" class="visuallyhidden">Address line two</label>
+
+                <p><input type="text" id="address_manualAddress_lineTwo" name="address.manualAddress.lineTwo" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineTwo" data-validation-type="field" data-validation-rules="nonEmpty"></p>
+
+
+
+                <label for="address_manualAddress_lineThree" class="visuallyhidden">Address line three</label>
+
+                <p><input type="text" id="address_manualAddress_lineThree" name="address.manualAddress.lineThree" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineThree" data-validation-type="field" data-validation-rules="nonEmpty"></p>
+
+            </fieldset>
+        </div>
+        <label for="address_manualAddress_city">Town or city</label>
+        <div class="validation-wrapper ">
+            <p><input type="text" id="address_manualAddress_city" name="address.manualAddress.city" value="" class="text long validate " autocomplete="off" data-validation-name="city" data-validation-type="field" data-validation-rules="nonEmpty"></p>
+        </div>
+
+        <label for="address_manualAddress_city">Postcode</label>
+
+        <p><input type="text" class="form-control form-control-1-4" id="address-postcode"></p>
+
+    </fieldset>
+
+
+		<div class="form-group" style="padding-top:2em">
+		<a href="change-address-4dl" class="button">Continue</a>
+		</div>
+
+		<p><a href="change-address-3dl">Find address using the postcode</a></p>
+
+		<p><a href="#">Use a BFPO address</a></p>
+
+	</fieldset>
+
+
+
+
+	
+	
+	
+
+	
+
+
+
+</article>		
+
+<!-- hide this next action button 
+<form action="get" class="form" style="margin-top:2.5em">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+-->
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

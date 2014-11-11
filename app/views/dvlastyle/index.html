@@ -1,0 +1,112 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+
+  <link href="/public/stylesheets/examples.css" media="screen" rel="stylesheet" type="text/css">
+
+
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+
+<main id="page-container" role="main">
+  <div id="content">
+
+    
+
+    <div class="inner-block">
+
+      <div >
+
+        <p class="lede">
+          This page aims to explain DVLA specific elements, while remaining consistent with the rest of GOV.UK.
+        </p>
+
+
+
+
+        <h2 class="heading-large heading-with-border">Specific DVLA elements</h2>
+
+
+        <h2 class="heading-medium">Vehicle registration number</h2>
+
+        <p>
+           Where the vehicle registration number (also known as the reg mark) is displayed outside of surrounding data or a sentence, you may display it using this style, which is highly recognisable and distinctive.
+        </p>
+
+        
+        <div class="grid-row">
+            <div class="example column-half">
+
+              <p>
+                <span class="reg-mark">K331 VPM</span>
+              </p>
+
+            </div>
+
+
+          <div class="column-half">
+          <pre class=" language-markup"><code class=" language-markup">
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>grid-row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>column-third<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>column-third<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>column-third<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code>
+          </pre>
+          </div>
+
+        </div><!-- grid row -->
+
+
+
+
+
+
+        <h2 class="heading-large heading-with-border">GOV.UK elements</h2>
+
+        <ol class="list-number">
+          <li><a href="dvla-styleguide-layout">Layout</a></li>
+          <li><a href="dvla-styleguide-typography">Typography</a></li>
+          <li><a href="dvla-styleguide-colour">Colour</a></li>
+          <li><a href="dvla-styleguide-icons-images">Icons and images</a></li>
+          <li><a href="dvla-styleguide-data">Data</a></li>
+          <li><a href="dvla-styleguide-forms">Forms</a></li>
+          <li><a href="dvla-styleguide-buttons">Buttons</a></li>
+          <li><a href="dvla-styleguide-errors">Errors and validation</a></li>
+        </ol>
+
+        <h2 class="heading-medium">Looking for the styles?</h2>
+        <p>
+           The Sass files for <a href="https://github.com/alphagov/govuk_elements/tree/master/public/sass">all the examples in this page can be found on GitHub</a>.
+        </p>
+
+      </div>
+
+      
+
+      </div>
+      <!-- / #guide-errors -->
+
+    </div><!-- / .inner-block -->
+
+   </div><!-- / #content -->
+</main><!-- / #wrapper -->
+
+{{/content}}
+
+{{/govuk_template}}
